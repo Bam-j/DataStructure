@@ -144,8 +144,3 @@ listNode* search(linkedList_h* L, char* x) {
 	}
 	return temp;
 }
-
-int main() {
-	printf("hello, world!");
-	return 0;
-}
