@@ -142,6 +142,7 @@
     <ClCompile Include="CircularLinkedList.c" />
     <ClCompile Include="DoublyLinkedList.c" />
     <ClCompile Include="LinkedList.c" />
+    <ClCompile Include="StackByArray.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
