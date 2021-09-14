@@ -6,3 +6,7 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+.idea/
+./vs/DataStructure/v16
+cmake-build-debug/CMakeFiles
+CMakeLists.txt
