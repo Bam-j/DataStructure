@@ -1,0 +1,6 @@
+.idea/
+.vs/
+CMakeLists.txt
+DataStructure.sln
+CMake/
+cmake-build-debug/
