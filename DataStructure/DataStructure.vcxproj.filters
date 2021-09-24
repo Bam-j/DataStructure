@@ -42,5 +42,8 @@
     <ClCompile Include="Deque.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BinaryTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
