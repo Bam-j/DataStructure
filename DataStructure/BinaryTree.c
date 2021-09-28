@@ -50,3 +50,27 @@ binaryTreeNode* getLeftSubTree(binaryTreeNode* BT) {
 binaryTreeNode* getRightSubTree(binaryTreeNode* BT) {
 	return BT->rightNode;
 }
+
+void preorder(binaryTreeNode* BT) {
+	if (BT) {
+		//현재 노드 연산 위치(전위 순회)
+		preorder(BT->leftNode);
+		preorder(BT->rightNode);
+	}
+}
+
+void inorder(binaryTreeNode* BT) {
+	if (BT) {
+		inorder(BT->leftNode);
+		//현재 노드 연산 위치(중위 순회)
+		inorder(BT->rightNode);
+	}
+}
+
+void postorder(binaryTreeNode* BT) {
+	if (BT) {
+		postorder(BT->leftNode);
+		postorder(BT->rightNode);
+		//현재 노드 연산 위치(후위 순회)
+	}
+}
