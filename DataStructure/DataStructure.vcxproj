@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AVL.c" />
     <ClCompile Include="BinarySearchTree.c" />
     <ClCompile Include="BinaryTree.c" />
     <ClCompile Include="CircularLinkedList.c" />
