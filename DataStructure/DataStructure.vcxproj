@@ -146,6 +146,7 @@
     <ClCompile Include="CircularQueue.c" />
     <ClCompile Include="Deque.c" />
     <ClCompile Include="DoublyLinkedList.c" />
+    <ClCompile Include="Heap.c" />
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="QueueByArray.c" />
     <ClCompile Include="QueueByLinkedList.c" />

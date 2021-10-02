@@ -51,5 +51,8 @@
     <ClCompile Include="AVL.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Heap.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
