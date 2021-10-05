@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdjacentListGraph.c" />
     <ClCompile Include="AdjacentMatrixGraph.c" />
     <ClCompile Include="AVL.c" />
     <ClCompile Include="BinarySearchTree.c" />
