@@ -10,14 +10,14 @@ typedef struct graphNode {
 
 typedef struct graphType {
 	int n;
-	graphNode* adjacentListHeadPointer[MAX_VERTEX];
+	graphNode* adjacentListHeadPtr[MAX_VERTEX];
 }graphType;
 
 void createGraph(graphType* g) {
 	g->n = 0;
 
 	for (int i = 0; i < MAX_VERTEX; i++) {
-		g->adjacentListHeadPointer[i] = NULL;
+		g->adjacentListHeadPtr[i] = NULL;
 	}
 }
 
@@ -38,7 +38,7 @@ void insertEdge(graphType* g, int tail, int head) {
 
 	node = (graphNode*)malloc(sizeof(graphNode));
 	node->vertex = head;
-	node->link = g->adjacentListHeadPointer[tail];
+	node->link = g->adjacentListHeadPtr[tail];
 
-	g->adjacentListHeadPointer[tail] = node;
+	g->adjacentListHeadPtr[tail] = node;
 }

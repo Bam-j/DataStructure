@@ -142,6 +142,7 @@
     <ClCompile Include="AdjacentListGraph.c" />
     <ClCompile Include="AdjacentMatrixGraph.c" />
     <ClCompile Include="AVL.c" />
+    <ClCompile Include="BFS.c" />
     <ClCompile Include="BinarySearchTree.c" />
     <ClCompile Include="BinaryTree.c" />
     <ClCompile Include="CircularLinkedList.c" />

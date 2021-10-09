@@ -13,7 +13,7 @@ typedef struct graphNode {
 
 typedef struct graphType {
 	int n;
-	graphNode* adjacentListHeadPointer[MAX_VERTEX];
+	graphNode* adjacentListHeadPtr[MAX_VERTEX];
 	int visitedNode[MAX_VERTEX];
 }graphType;
 
@@ -64,7 +64,7 @@ void createGraph(graphType* g) {
 
 	for (int v = 0; v < MAX_VERTEX; v++) {
 		g->visitedNode[v] = FALSE;
-		g->adjacentListHeadPointer[v] = NULL;
+		g->adjacentListHeadPtr[v] = NULL;
 	}
 }
 
@@ -85,9 +85,9 @@ void insertEdge(graphType* g, int tail, int head) {
 
 	node = (graphNode*)malloc(sizeof(graphNode));
 	node->vertex = head;
-	node->link = g->adjacentListHeadPointer[tail];
+	node->link = g->adjacentListHeadPtr[tail];
 
-	g->adjacentListHeadPointer[tail] = node;
+	g->adjacentListHeadPtr[tail] = node;
 }
 
 void DepthFirstSearch(graphType* g, int v) {
@@ -101,7 +101,7 @@ void DepthFirstSearch(graphType* g, int v) {
 
 	while (!isEmpty()) {
 		v = pop();
-		currentNode = g->adjacentListHeadPointer[v];
+		currentNode = g->adjacentListHeadPtr[v];
 
 		while (currentNode) {
 			if (!g->visitedNode[currentNode->vertex]) {
@@ -112,7 +112,7 @@ void DepthFirstSearch(graphType* g, int v) {
 				push(currentNode->vertex);
 				g->visitedNode[currentNode->vertex] = TRUE;
 				v = currentNode->vertex;
-				currentNode = g->adjacentListHeadPointer[v];
+				currentNode = g->adjacentListHeadPtr[v];
 			}
 			else {
 				currentNode = currentNode->link;
